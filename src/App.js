@@ -1,24 +1,33 @@
-import logo from './logo.svg';
+
+import { Route, BrowserRouter as Router, Routes} from 'react-router-dom';
 import './App.css';
+import Home from './Pages/Home';
+import ProductService from './Pages/ProductService';
+import About from './Pages/About';
+import Contact from './Pages/Contact';
+import { useEffect, useState } from 'react';
+import Loading from './Components/Loading';
 
 function App() {
+  const [loading, setLoading] = useState(false)
+useEffect(() => {
+  setLoading(true)
+  setTimeout(()=>{
+    setLoading(false)
+  },2000)
+}, [])
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+  <>
+  {loading ? <Loading/>:
+  <Router>
+   <Routes> 
+  <Route path="/" element={<Home />} />
+  <Route path="/about" element={<About />} />
+  <Route path="/product-services" element={<ProductService />} />
+  <Route path="/contact" element={<Contact/>} />
+  </Routes>
+  </Router>}
+  </>
   );
 }
 

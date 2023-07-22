@@ -1,0 +1,18 @@
+.banner{
+    background: #fd0;
+    color: #333333;
+    height: 36.6em;
+    width: 100%;
+}
+.banner-head{
+    font-size: 3em;
+    font-weight:900;
+    letter-spacing: 0.2em;
+    font-family: Bwnistagrot bk,sans-serif;
+    text-transform: uppercase;
+    color: #333333;
+
+}
+.right-c{
+    padding-top: 8em;
+}
