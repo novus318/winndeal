@@ -29,7 +29,9 @@ function Header() {
      expand="md"
      className={navColour ? "navcolor" : "navbar"}
     >
-      <Navbar.Brand className='ms-5 ' ><Link to ='/'><img className='logo' src={navColour ? logo :logoColor} alt='logo'/></Link></Navbar.Brand>
+      <Navbar.Brand className='ms-5 ' ><Link to ='/'><motion.img initial={{ opacity: 0, scale: 0.6 }}
+           animate={{ opacity: 1, scale: 1 }}
+           transition={{ duration: 0.6 }} className='logo' src={navColour ? logo :logoColor} alt='logo'/></Link></Navbar.Brand>
       <Navbar.Toggle aria-controls="responsive-navbar-nav"
       onClick={() => {
         updateExpanded(expand ? false : "expanded");
