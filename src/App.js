@@ -18,15 +18,15 @@ useEffect(() => {
 }, [])
   return (
   <>
-  {loading ? <Loading/>:
+  
   <Router>
    <Routes> 
-  <Route path="/" element={<Home />} />
+  <Route path="/" element={loading ? <Loading/>:<Home />} />
   <Route path="/about" element={<About />} />
   <Route path="/product-services" element={<ProductService />} />
   <Route path="/contact" element={<Contact/>} />
   </Routes>
-  </Router>}
+  </Router>
   </>
   );
 }

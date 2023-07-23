@@ -5,31 +5,30 @@ import banner3 from "../../Images/baner1.png"
 import { TypeAnimation } from 'react-type-animation';
 function Banner() {
   return (
-    <div className='banner mt-5 pt-5'>
-      <div className='d-flex justify-content-between'>
-        <motion.div initial={{ opacity: 0, scale: 0.9 }}
+    <section className='banner mt-5'>
+       <motion.div initial={{ opacity: 0, scale: 0.9 }}
            animate={{ opacity: 1, scale: 1 }}
-           transition={{ duration: 0.9 }} className='container'>
+           transition={{ duration: 0.9 }} className='col-12 col-md-6 align-items-center'>
         <motion.img initial={{ opacity: 0, scale: 1.3 }}
            animate={{ opacity: 0.9, scale: 1 }}
-           transition={{ duration: 0.9 }} src={banner3} alt="banner" className='ban-img ' />
+           transition={{ duration: 1.5 }} src={banner3} alt={banner3} className='img-fluid ban-img ' />
         </motion.div>
-        <div className='container m-auto right-c'>
+        <div className='container col-11 col-md-7'>
           
           <motion.div
            initial={{ opacity: 0, scale: 0.6 }}
            animate={{ opacity: 1, scale: 1 }}
-           transition={{ duration: 0.9 }} className='banner-head'>We deliver
+           transition={{ duration: 0.9 }} className='display-2'>We deliver
            </motion.div>
            <motion.div
            initial={{ opacity: 0, scale: 0.6 }}
            animate={{ opacity: 1, scale: 1 }}
-           transition={{ duration: 0.9 }} className='banner-text'>
+           transition={{ duration: 0.9 }} className='display-6'>
            <TypeAnimation
            sequence={[
-             'Cutting-edge IT solutions tailored to your business needs',
+             'Cutting-edge IT solutions tailored to your business needs.',
              5000,
-             'Top-notch services that drive results',
+             'Top-notch services that drive results.',
              5000,
            ]}
            wrapper="span"
@@ -38,8 +37,7 @@ function Banner() {
          />
          </motion.div>
         </div>
-      </div>
-    </div>
+    </section>
   )
 }
 

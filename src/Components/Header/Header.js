@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import logoColor from '../../Images/logo-color.png';
 import logo from '../../Images/logo.png';
 import "./Header.css"
-import {  Navbar } from 'react-bootstrap';
+import {  Nav,Navbar } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import { MDBIcon } from 'mdb-react-ui-kit';
 import { motion } from "framer-motion"
@@ -29,7 +29,7 @@ function Header() {
      expand="md"
      className={navColour ? "navcolor" : "navbar"}
     >
-      <Navbar.Brand className='ms-5 ' ><Link to ='/'><motion.img initial={{ opacity: 0, scale: 0.6 }}
+      <Navbar.Brand ><Link to ='/'><motion.img initial={{ opacity: 0, scale: 0.9 }}
            animate={{ opacity: 1, scale: 1 }}
            transition={{ duration: 0.6 }} className='logo' src={navColour ? logo :logoColor} alt='logo'/></Link></Navbar.Brand>
       <Navbar.Toggle aria-controls="responsive-navbar-nav"
@@ -38,16 +38,17 @@ function Header() {
       }}><MDBIcon className={navColour ? 'nav-toggle-color' : 'nav-toggle'} fas icon="bars"size='lg' /></Navbar.Toggle>
       <Navbar.Collapse  id="responsive-navbar-nav">
       
-        <div className='m-auto'>
-        <motion.Nav initial={{ opacity: 0, scale: 1 }}
-           animate={{ opacity: 1, scale: 1 }}
-           transition={{ duration: 0.6 }}>
+        <motion.div 
+        initial={{ opacity: 0, scale: 1 }}
+        animate={{ opacity: 1, scale: 1 }}
+        transition={{ duration: 0.6 }}className='m-auto'>
+        <Nav >
         <Link className={navColour ?'nav-li-color me-3':'nav-li me-3'} to='/'>HOME</Link>
-        <Link className={navColour ?'nav-li-color me-3':'nav-li me-3'}  to='/about'>ABOUT</Link>
+        <Link className={navColour ?'nav-li-color me-4':'nav-li me-4'}  to='/about'>ABOUT</Link>
+        <Link className={navColour ?'nav-li-color me-4':'nav-li me-4'} to='/product-services'>PRODUCT & SERVICES</Link>
         <Link className={navColour ?'nav-li-color me-3':'nav-li me-3'}  to='/contact'>CONTACT</Link>
-        <Link className={navColour ?'nav-li-color me-3':'nav-li me-3'} to='/product-services'>PRODUCT & SERVICES</Link>
-        </motion.Nav>
-        </div> 
+        </Nav>
+        </motion.div> 
       </Navbar.Collapse>
     </Navbar>
     </div>

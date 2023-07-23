@@ -1,26 +1,22 @@
 .banner{
     background: #fd0;
     color: #333333;
-    height: 36.6em;
-    width: 100%;
+    height:36.6em;
 }
-.banner-head{
-    font-size: 4em;
-    font-weight:900;
-    letter-spacing: 0.2em;
-    font-family: Bwnistagrot bk,sans-serif;
-    text-transform: uppercase;
-    color: #333333;
+.display-2{
+    font-weight:900 !important;
+    letter-spacing: 0.2em !important;
+    font-family: Bwnistagrot bk,sans-serif !important;
+    text-transform: uppercase !important;
+    color: #333333 !important;
 
 }
-.banner-text{
-    font-family: Netflix Sans,Helvetica Neue,Segoe UI,Roboto,Ubuntu,sans-serif;
-    font-weight: 600;
-    color: #333333;
-    font-size: 1.5em;
+.display-6{
+    font-family: Netflix Sans,Helvetica Neue,Segoe UI,Roboto,Ubuntu,sans-serif !important;
+    font-weight: 500 !important;
+    color: #333333 !important;
 }
 .ban-img{
-    width: 45em;
     margin-top: 12%;
     margin-left: -13%;
     
