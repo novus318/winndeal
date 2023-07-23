@@ -6,13 +6,11 @@ import { TypeAnimation } from 'react-type-animation';
 function Banner() {
   return (
     <section className='banner mt-5'>
-       <motion.div initial={{ opacity: 0, scale: 0.9 }}
-           animate={{ opacity: 1, scale: 1 }}
-           transition={{ duration: 0.9 }} className='col-12 col-md-6 align-items-center'>
+       <div className='col-12 col-md-6 align-items-center'>
         <motion.img initial={{ opacity: 0, scale: 1.3 }}
            animate={{ opacity: 0.9, scale: 1 }}
            transition={{ duration: 1.5 }} src={banner3} alt={banner3} className='img-fluid ban-img ' />
-        </motion.div>
+        </div>
         <div className='container col-11 col-md-7'>
           
           <motion.div

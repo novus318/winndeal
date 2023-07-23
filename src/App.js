@@ -7,6 +7,7 @@ import About from './Pages/About';
 import Contact from './Pages/Contact';
 import { useEffect, useState } from 'react';
 import Loading from './Components/Loading';
+import Layout from './Components/Layout';
 
 function App() {
   const [loading, setLoading] = useState(true)
@@ -18,7 +19,7 @@ useEffect(() => {
 }, [])
   return (
   <>
-  
+  <Layout>
   <Router>
    <Routes> 
   <Route path="/" element={loading ? <Loading/>:<Home />} />
@@ -27,6 +28,7 @@ useEffect(() => {
   <Route path="/contact" element={<Contact/>} />
   </Routes>
   </Router>
+  </Layout>
   </>
   );
 }
