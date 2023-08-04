@@ -2,6 +2,7 @@ import React from 'react'
 import Header from '../Components/Header/Header'
 import Banner from '../Components/Banner/Banner'
 import Layout from '../Components/Layout'
+import Promise from '../Components/Promise/Promise'
 function Home() {
   return (
     <>
@@ -9,6 +10,7 @@ function Home() {
     keywords={'Winndeal,winndeal,WINNDEAL,WinnDeal,UAE,uae,DUBAI,Dubai,dubai,nizamudheen'} author={'Muhammed Nizamudheen M'}>
     <Header/>
     <Banner/>
+    <Promise/>
     </Layout>
     </>
   )

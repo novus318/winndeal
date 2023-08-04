@@ -11,7 +11,7 @@ function Header() {
   const [navColour, updateNavbar] = useState(false);
 
   function scrollHandler() {
-    if (window.scrollY >= 240) {
+    if (window.scrollY >= 420) {
       updateNavbar(true);
     } else {
       updateNavbar(false);
