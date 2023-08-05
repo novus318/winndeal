@@ -38,7 +38,7 @@ function Promise() {
         transition: 'color 0.2s ease',
       }}
     >
-      <h1 className='p-head'>IT solutions and products to <br/>meet the diverse needs of business</h1>
+      <h1 className='p-h'>IT solutions and products to <br/>meet the diverse needs of business</h1>
     </motion.div>
     <div className='row container-fluid'>
     <motion.div  initial={{ opacity: 0, scale: 1 ,x: initialX }}

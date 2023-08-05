@@ -1,8 +1,11 @@
-.p-h{
+.p-head{
     font-weight: 700;
+    color: #fd0;
+    letter-spacing: 0.2em;
     font-family:  Netflix Sans,Helvetica Neue,Segoe UI,Roboto,Ubuntu,sans-serif;
+    text-shadow: 2px 2px rgba(155, 134, 0, 0.63);
 }
-.para{
-    font-weight: 600;
+.p-d{
     font-family:  Netflix Sans,Helvetica Neue,Segoe UI,Roboto,Ubuntu,sans-serif;
+    font-weight: 500;
 }

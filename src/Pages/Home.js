@@ -3,6 +3,8 @@ import Header from '../Components/Header/Header'
 import Banner from '../Components/Banner/Banner'
 import Layout from '../Components/Layout'
 import Promise from '../Components/Promise/Promise'
+import Cards from '../Components/Cards/Cards'
+import Products from '../Components/Products/Products'
 function Home() {
   return (
     <>
@@ -11,6 +13,8 @@ function Home() {
     <Header/>
     <Banner/>
     <Promise/>
+    <Products/> 
+    <Cards/>
     </Layout>
     </>
   )
