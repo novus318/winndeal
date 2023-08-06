@@ -33,7 +33,7 @@ function Cards() {
   return (
     <>
         <div className='row container-fluid mb-5 m-auto'>
-        <div className='col-11 col-md-4'>
+        <div className='col-11 col-md-4 m-auto mb-4'>
         <MDBCard className='p-1'>
       <motion.div
         initial={{ opacity: 0, y: -50 }} animate={controls}
@@ -55,7 +55,7 @@ function Cards() {
       </motion.div>
       </MDBCard>
         </div>
-      <div className='col-11 col-md-4'>
+      <div className='col-11 col-md-4 m-auto mb-4'>
       <MDBCard className='p-1'>
       <motion.div
         initial={{ opacity: 0, y: -50 }} animate={controls}
@@ -79,7 +79,7 @@ function Cards() {
       </motion.div>
       </MDBCard>
       </div>
-      <div className='col-11 col-md-4'>
+      <div className='col-11 col-md-4 m-auto mb-4'>
       <MDBCard className='p-1'>
       <motion.div
         initial={{ opacity: 0, y: -50 }} animate={controls}

@@ -17,6 +17,38 @@
     text-transform: uppercase;
 }
 .page-head{
-    font-weight: 700;
+    font-weight: 700 !important;
     font-family:  Netflix Sans,Helvetica Neue,Segoe UI,Roboto,Ubuntu,sans-serif
 }
+.contact-icons {
+    position: fixed;
+    bottom: 2em;
+    right: 1em;
+    display: flex;
+  }
+  .wapp{
+    color: #fff;
+    background-color:#21bd5a;
+    border-radius: 0.6em;
+    padding-left: 0.2em;
+    padding-right: 0.2em;
+    padding-top: 0.16em;
+    padding-bottom: 0.16em;
+    cursor: pointer;
+  }
+  .mail{
+    color: #D44638;
+    background-color:transparent;
+    border-radius: 0.6em;
+    padding-left: 0.2em;
+    padding-right: 0.2em;
+    padding-top: 0.16em;
+    padding-bottom: 0.16em;
+    cursor: pointer;
+  }
+  .locate{
+    cursor: pointer;
+  }
+  .locate :hover .l-arrow{
+    color: #fd0;
+  }

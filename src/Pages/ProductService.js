@@ -2,6 +2,8 @@ import React from 'react'
 import Header from '../Components/Header/Header'
 import { motion } from 'framer-motion';
 import Products from '../Components/Products/Products';
+import ContactIcons from '../Components/ContactIcons';
+import Footer from '../Components/Footer/Footer';
 function ProductService() {
   const serviceList = [
     'Installation and Setup',
@@ -19,6 +21,7 @@ function ProductService() {
   return (
     <>
     <Header/>
+    <ContactIcons/>
     <div className='mt-5 pt-5'>
     <div className='mt-5'>
       <motion.div
@@ -45,6 +48,7 @@ function ProductService() {
       <Products/>
     </div>
     </div>
+    <Footer/>
     </>
   )
 }

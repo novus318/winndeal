@@ -5,6 +5,8 @@ import Layout from '../Components/Layout'
 import Promise from '../Components/Promise/Promise'
 import Cards from '../Components/Cards/Cards'
 import Products from '../Components/Products/Products'
+import Footer from '../Components/Footer/Footer'
+import ContactIcons from '../Components/ContactIcons'
 function Home() {
   return (
     <>
@@ -15,6 +17,8 @@ function Home() {
     <Promise/>
     <Products/> 
     <Cards/>
+    <ContactIcons/>
+    <Footer/>
     </Layout>
     </>
   )

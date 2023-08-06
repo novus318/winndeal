@@ -72,7 +72,7 @@ function Products() {
             cursor: "pointer",
             transition: "color 0.2s ease",
           }}
-          className="text-center page-head mt-3 mb-5"
+          className="text-center page-head mt-3 mb-5 display-4"
         >
           Our Products
         </motion.h1>

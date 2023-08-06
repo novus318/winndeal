@@ -1,20 +1,53 @@
 // Contact.js
-import React from "react";
+import React, { useEffect } from "react";
 import Header from "../Components/Header/Header";
-import { motion } from "framer-motion";
 import Layout from "../Components/Layout";
 import banner2 from "../Images/c1.png";
 import "./Page.css";
-
+import { motion,useAnimation } from 'framer-motion';
+import {
+    MDBCard,
+    MDBCardHeader,
+    MDBCardBody,
+    MDBCardTitle,
+    MDBCardText,
+    MDBIcon
+  } from 'mdb-react-ui-kit';
+import ContactIcons from "../Components/ContactIcons";
+import Footer from "../Components/Footer/Footer";
 function Contact() {
   const handleEmail = (e) => {
     e.preventDefault();
   };
+  const Location=()=>{
+    window.open('https://goo.gl/maps/Ja7wtrVrpMZC6xHi6')
+  }
+  const controls = useAnimation();
 
+  const handleScroll = () => {
+    const scrollY = window.scrollY;
+    const sectionElements = document.querySelectorAll('.section');
+
+    sectionElements.forEach((element) => {
+      const elementTop = element.offsetTop;
+      const desiredPosition = elementTop - 300; 
+
+      if (scrollY > desiredPosition) {
+        controls.start({ opacity: 1, y: 0 });
+      }
+    });
+  };
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+    // eslint-disable-next-line
+  }, []);
   return (
     <>
       <Layout title={"Contact Us"}>
         <Header />
+        <ContactIcons/>
         <div className="mt-5 pt-5" style={{ background: "#fd0" }}>
           <motion.div
             initial={{ opacity: 0, y: -20 }}
@@ -45,7 +78,7 @@ function Contact() {
                   animate={{ opacity: 1, scale: 1 }}
                   transition={{ duration: 0.9 }}
                   onSubmit={handleEmail}
-                  className="text-center"
+                  className="text-center mt-4"
                 >
                   <input className="input col-12 p-2 mb-4" placeholder="Name" type="text" />
                   <input className="input col-12 p-2 mb-4" placeholder="Email" type="email" />
@@ -64,7 +97,33 @@ function Contact() {
               </div>
             </div>
           </motion.div>
+          <div onClick={Location} className='col-11 col-md-6 m-auto pb-5 locate'>
+        <MDBCard className='p-1'>
+      <motion.div
+        initial={{ opacity: 0, y: -50 }} animate={controls}
+        transition={{ delay: 0.2 }}
+        className='section'
+      >
+        <MDBCardHeader className='text-center'><MDBIcon className="l-arrow" fas icon="map-marked-alt" size='3x'/></MDBCardHeader>
+        <MDBCardBody>
+        <MDBCardTitle>
+        <h2 className='page-head'>
+          STORE LOCATION
+        </h2>
+        </MDBCardTitle>
+        <MDBCardText className='para'>
+        WINN DEAL
+Office-B19-190 ,Block B
+SRTI Park, Sharjah - United Arab Emirates<br/>
+TRN : 104073345100003<br/>
+Phone : +97143985048
+        </MDBCardText>
+        </MDBCardBody>
+      </motion.div>
+      </MDBCard>
         </div>
+        </div>
+        <Footer/>
       </Layout>
     </>
   );

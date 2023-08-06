@@ -1,0 +1,33 @@
+.footer{
+    background-color: #333333;
+}
+.f-head{
+    color: #fff;
+    font-family:Netflix Sans,Helvetica Neue,Segoe UI,Roboto,Ubuntu,sans-serif ;
+    font-weight: 900;
+}
+.f-p{
+    font-family:Netflix Sans,Helvetica Neue,Segoe UI,Roboto,Ubuntu,sans-serif ;
+    font-weight: 600;
+    cursor: pointer;
+}
+.s-icons{
+    cursor: pointer;
+    color: #fff;
+}
+.s-icons:hover{
+color: #fd0;
+}
+.nizam{
+    color: #fff;
+    text-decoration: none;
+    font-family: Netflix Sans,Helvetica Neue,Segoe UI,Roboto,Ubuntu,sans-serif;
+    cursor: pointer;
+    font-weight: 800;
+    letter-spacing: 0.1em;
+}
+.nizam:hover{
+    background-color: #fff;
+    color: #333333;
+    border-radius: 0.3em;
+}

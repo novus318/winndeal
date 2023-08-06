@@ -5,6 +5,8 @@ import A2 from "../Images/a2.png";
 import A1 from "../Images/a1.png";
 import "./Page.css";
 import Cards from "../Components/Cards/Cards";
+import ContactIcons from "../Components/ContactIcons";
+import Footer from "../Components/Footer/Footer";
 
 function About() {
   const [scrollY, setScrollY] = useState(0);
@@ -36,6 +38,7 @@ function About() {
   return (
     <>
       <Header />
+      <ContactIcons/>
       <motion.div
         initial={{ opacity: 0, y: 50 }}
         animate={{ opacity: 1, y: 0 }}
@@ -125,6 +128,7 @@ function About() {
         </motion.div>
       </motion.div>
       <Cards/>
+      <Footer/>
     </>
   );
 }
