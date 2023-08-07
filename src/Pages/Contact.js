@@ -18,6 +18,7 @@ import ContactIcons from "../Components/ContactIcons";
 import Footer from "../Components/Footer/Footer";
 import toast from "react-hot-toast";
 import Loading from "../Components/Loading";
+import ChatBot from "../Components/ChatBot";
 function Contact() {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
@@ -105,6 +106,7 @@ const EMAIL_USER_ID='eAIazN3sfCYuXsB-i'
       <Layout title={"Contact Us"}>
         <Header />
         <ContactIcons/>
+        <ChatBot/>
         <div className="mt-5 pt-5" style={{ background: "#fd0" }}>
           <motion.div
             initial={{ opacity: 0, y: -20 }}

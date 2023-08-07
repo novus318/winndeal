@@ -60,3 +60,30 @@
   border-top-left-radius: 0.3em;
   border-top-right-radius: 0.3em;
 }
+.Bot{
+  position: fixed;
+    top: 7em;
+    right: 1em;
+}
+.bot-head{
+  background-color: #333333;
+  color: #fff;
+  padding  : 0.5em;
+  font-weight: 700 !important;
+    font-family:  Netflix Sans,Helvetica Neue,Segoe UI,Roboto,Ubuntu,sans-serif;
+    border-top-right-radius: 0.3em;
+    border-top-left-radius: 0.3em;
+}
+.bot-icon{
+  color: #fff;
+  background-color:#333333;
+  border-radius: 0.7em;
+  padding-left: 0.18em;
+  padding-right: 0.18em;
+  padding-top: 0.16em;
+  padding-bottom: 0.16em;
+  cursor: pointer;
+}
+.react-chatbot-kit-chat-inner-container {
+max-height: 25em;
+}

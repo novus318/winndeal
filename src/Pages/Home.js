@@ -7,6 +7,7 @@ import Cards from '../Components/Cards/Cards'
 import Products from '../Components/Products/Products'
 import Footer from '../Components/Footer/Footer'
 import ContactIcons from '../Components/ContactIcons'
+import ChatBot from '../Components/ChatBot'
 function Home() {
   return (
     <>
@@ -17,6 +18,7 @@ function Home() {
     <Promise/>
     <Products/> 
     <Cards/>
+    <ChatBot/>
     <ContactIcons/>
     <Footer/>
     </Layout>

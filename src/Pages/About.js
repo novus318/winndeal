@@ -8,6 +8,7 @@ import Cards from "../Components/Cards/Cards";
 import ContactIcons from "../Components/ContactIcons";
 import Footer from "../Components/Footer/Footer";
 import Layout from "../Components/Layout";
+import ChatBot from "../Components/ChatBot";
 
 function About() {
   const controls = useAnimation();
@@ -124,6 +125,7 @@ function About() {
           </h4>
         </motion.div>
       </motion.div>
+      <ChatBot/>
       <Cards/>
       <Footer/>
      </Layout>

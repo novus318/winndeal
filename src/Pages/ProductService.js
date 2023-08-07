@@ -15,6 +15,7 @@ import Installation from  '../Images/Installation.png'
 import Maintenance from  '../Images/Maintenance.png'
 import Security from  '../Images/Security.png'
 import Consultation from  '../Images/Consultation.png'
+import ChatBot from '../Components/ChatBot';
 function ProductService() {
   const serviceList = [
     {
@@ -53,6 +54,7 @@ function ProductService() {
     <Layout title={"Products & Services"}>
     <Header/>
     <ContactIcons/>
+    <ChatBot/>
     <div className='mt-5 pt-5'>
     <div className='mt-5'>
       <motion.div

@@ -9,6 +9,7 @@ import { useEffect, useState } from 'react';
 import Loading from './Components/Loading';
 import Layout from './Components/Layout';
 import { Toaster } from 'react-hot-toast';
+import 'react-chatbot-kit/build/main.css'
 
 function App() {
   const [loading, setLoading] = useState(true)
