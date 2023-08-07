@@ -74,7 +74,7 @@ function ProductService() {
         </motion.h1>
         <div className='row container-fluid m-auto'>
         {serviceList.map((service, index) => (
-          <div className='col-11 col-md-3'>
+          <div className='col-11 col-md-3 mb-3'>
            <MDBCard className='p-1'>
                   <motion.div
                     key={index}

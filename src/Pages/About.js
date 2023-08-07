@@ -1,6 +1,6 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import Header from "../Components/Header/Header";
-import { motion } from "framer-motion";
+import { motion, useAnimation } from "framer-motion";
 import A2 from "../Images/a2.png";
 import A1 from "../Images/a1.png";
 import "./Page.css";
@@ -10,32 +10,27 @@ import Footer from "../Components/Footer/Footer";
 import Layout from "../Components/Layout";
 
 function About() {
-  const [scrollY, setScrollY] = useState(0);
+  const controls = useAnimation();
+
+  const handleScroll = () => {
+    const scrollY = window.scrollY;
+    const sectionElements = document.querySelectorAll('.section');
+
+    sectionElements.forEach((element) => {
+      const elementTop = element.offsetTop;
+      const desiredPosition = elementTop - 300; 
+
+      if (scrollY > desiredPosition) {
+        controls.start({ opacity: 1, y: 0 });
+      }
+    });
+  };
 
   useEffect(() => {
-    const handleScroll = () => {
-      setScrollY(window.scrollY);
-    };
-
-    window.addEventListener("scroll", handleScroll);
-
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+    // eslint-disable-next-line
   }, []);
-  const initialX = 300;
-  const targetX = -40;
-  const animationOffset = 270;
-  const currentX =
-    scrollY > animationOffset
-      ? targetX
-      : initialX + (scrollY / animationOffset) * (targetX - initialX);
-  const initialY = -400;
-  const targetY = 70;
-  const currentY =
-    scrollY > animationOffset
-      ? targetY
-      : initialY + (scrollY / animationOffset) * (targetY - initialY);
   return (
     <>
      <Layout title={"WinnDeal-About"}>
@@ -48,7 +43,7 @@ function About() {
         transition={{ duration: 0.4 }}
         className="mt-5 pt-5"
       >
-        <div className="row">
+        <div className="row m-auto">
           <motion.div
             transition={{ duration: 0.6 }}
             whileHover={{ scale: 1.1, color: "#fd0" }}
@@ -84,21 +79,21 @@ function About() {
             style={{
               cursor: "pointer",
               transition: "color 0.2s ease",
-            }} className="container-fluid col-9 col-md-5 col-lg-4">
+            }} className="container-fluid col-9 col-md-5 col-lg-4 mt-3">
             <img src={A2} alt="pic" className="img-fluid m-auto" />
           </motion.div>
           <motion.div
-            className="container-fluid col-9 col-md-5 col-lg-5"
-            initial={{ opacity: 0, scale: 1, x: initialY }}
-            animate={{ opacity: 1, scale: 1, x: currentY }}
+            className="container-fluid col-9 col-md-5 col-lg-5 mb-3 mt-3"
+            initial={{ opacity: 0, scale: 1 }}
+            animate={controls}
             transition={{ duration: 1 }}
           >
             <img src={A1} alt="pic" className="img-fluid m-auto" />
           </motion.div>
           <motion.div
             className="container-fluid col-11 col-md-6 col-lg-5 mt-auto mb-auto"
-            initial={{ opacity: 0, scale: 1, x: initialX }}
-            animate={{ opacity: 1, scale: 1, x: currentX }}
+            initial={{ opacity: 0, scale: 1 }}
+            animate={controls}
             transition={{ duration: 1 }}
             style={{
               transform: "translate(-10%)",
