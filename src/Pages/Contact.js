@@ -1,8 +1,9 @@
 // Contact.js
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import Header from "../Components/Header/Header";
 import Layout from "../Components/Layout";
 import banner2 from "../Images/c1.png";
+import emailjs from "emailjs-com";
 import "./Page.css";
 import { motion,useAnimation } from 'framer-motion';
 import {
@@ -15,9 +16,64 @@ import {
   } from 'mdb-react-ui-kit';
 import ContactIcons from "../Components/ContactIcons";
 import Footer from "../Components/Footer/Footer";
+import toast from "react-hot-toast";
+import Loading from "../Components/Loading";
 function Contact() {
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [subject, setSubject] = useState("");
+  const [message, setMessage] = useState("");
+  const [loading, setLoading] = useState(false)
+
+ const SERVICE_ID_EMAIL='service_ruqcbt8'
+const EMAILJS_TEMPLATE_ID='template_ck9zh7o'
+const EMAIL_USER_ID='eAIazN3sfCYuXsB-i'
   const handleEmail = (e) => {
     e.preventDefault();
+    setLoading(true)
+    const templateParams = {
+      from_name: name,
+      from_email: email,
+      subject,
+      message,
+    };
+
+    emailjs
+      .send(SERVICE_ID_EMAIL,EMAILJS_TEMPLATE_ID, templateParams,EMAIL_USER_ID)
+      .then(
+        (response) => {
+          setLoading(false)
+          toast.success('Enquiry has been Sent', {
+            style: {
+              border: '1px solid #fd0',
+              padding: '10px',
+              color: '#333333',
+            },
+            iconTheme: {
+              primary: '#333333',
+              secondary: '#fd0',
+            },
+          });
+        },
+        (error) => {
+          setLoading(false)
+          toast.error('Somthing wrong,Try again', {
+            style: {
+              border: '1px solid #fd0',
+              padding: '10px',
+              color: '#333333',
+            },
+            iconTheme: {
+              primary: '#333333',
+              secondary: '#fd0',
+            },
+          });
+        }
+      );
+    setName("");
+    setEmail("");
+    setSubject("");
+    setMessage("");
   };
   const Location=()=>{
     window.open('https://goo.gl/maps/Ja7wtrVrpMZC6xHi6')
@@ -45,6 +101,7 @@ function Contact() {
   }, []);
   return (
     <>
+    {loading ? (<Loading/>):(<>
       <Layout title={"Contact Us"}>
         <Header />
         <ContactIcons/>
@@ -80,10 +137,33 @@ function Contact() {
                   onSubmit={handleEmail}
                   className="text-center mt-4"
                 >
-                  <input className="input col-12 p-2 mb-4" placeholder="Name" type="text" />
-                  <input className="input col-12 p-2 mb-4" placeholder="Email" type="email" />
-                  <input className="input col-12 p-2 mb-4" placeholder="Subject" type="text" />
-                  <textarea className="input col-12 p-2 mb-4" placeholder="Message" />
+                  <input
+          className="input col-12 p-2 mb-4"
+          placeholder="Name"
+          type="text"
+          value={name}
+          onChange={(e) => setName(e.target.value)}
+        />
+        <input
+          className="input col-12 p-2 mb-4"
+          placeholder="Email"
+          type="email"
+          value={email}
+          onChange={(e) => setEmail(e.target.value)}
+        />
+        <input
+          className="input col-12 p-2 mb-4"
+          placeholder="Subject"
+          type="text"
+          value={subject}
+          onChange={(e) => setSubject(e.target.value)}
+        />
+        <textarea
+          className="input col-12 p-2 mb-4"
+          placeholder="Message"
+          value={message}
+          onChange={(e) => setMessage(e.target.value)}
+        />
                   <motion.button transition={{ duration: 0.2 }}
             whileHover={{ scale: 0.9, color: "#fd0" }}
             whileTap={{ scale: 0.9 }}
@@ -125,7 +205,7 @@ Phone : +97143985048
         </div>
         <Footer/>
       </Layout>
-    </>
+    </>)}</>
   );
 }
 

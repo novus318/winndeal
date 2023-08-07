@@ -52,3 +52,11 @@
   .locate :hover .l-arrow{
     color: #fd0;
   }
+.c-des{
+  font-family: Netflix Sans,Helvetica Neue,Segoe UI,Roboto,Ubuntu,sans-serif;
+  font-weight: 500;
+}
+.s-image{
+  border-top-left-radius: 0.3em;
+  border-top-right-radius: 0.3em;
+}

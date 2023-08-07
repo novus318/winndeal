@@ -8,7 +8,7 @@ import Contact from './Pages/Contact';
 import { useEffect, useState } from 'react';
 import Loading from './Components/Loading';
 import Layout from './Components/Layout';
-
+import { Toaster } from 'react-hot-toast';
 
 function App() {
   const [loading, setLoading] = useState(true)
@@ -29,6 +29,7 @@ useEffect(() => {
   <Route path="/contact" element={<Contact/>} />
   </Routes>
   </Router>
+  <Toaster />
   </Layout>
   </>
   );

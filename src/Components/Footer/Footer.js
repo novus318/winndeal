@@ -16,11 +16,12 @@ function Footer() {
   const emailAddress = "support@winndeal.com";
   return (
     <div>
+      <div className="shadow-overlay"></div>
       <MDBFooter className="footer" color="white">
         <MDBContainer className="p-2">
           <section className="mb-4 text-center">
-            <h2 className="f-head">Our Location</h2>
-            <h4 onClick={Location} className="f-p">
+            <h2 className="f-head mt-2">Our Location</h2>
+            <h4 onClick={Location} className="f-p mt-1">
               WINN DEAL Office-B19-190 ,Block B SRTI Park, Sharjah - United Arab
               Emirates
               <br />

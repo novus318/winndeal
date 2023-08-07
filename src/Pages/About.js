@@ -7,6 +7,7 @@ import "./Page.css";
 import Cards from "../Components/Cards/Cards";
 import ContactIcons from "../Components/ContactIcons";
 import Footer from "../Components/Footer/Footer";
+import Layout from "../Components/Layout";
 
 function About() {
   const [scrollY, setScrollY] = useState(0);
@@ -37,7 +38,8 @@ function About() {
       : initialY + (scrollY / animationOffset) * (targetY - initialY);
   return (
     <>
-      <Header />
+     <Layout title={"WinnDeal-About"}>
+     <Header />
       <ContactIcons/>
       <motion.div
         initial={{ opacity: 0, y: 50 }}
@@ -129,6 +131,7 @@ function About() {
       </motion.div>
       <Cards/>
       <Footer/>
+     </Layout>
     </>
   );
 }
