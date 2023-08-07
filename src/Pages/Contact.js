@@ -37,23 +37,23 @@ const EMAIL_USER_ID='eAIazN3sfCYuXsB-i'
       subject,
       message,
     };
-
+    setLoading(false)
+    toast.success('Enquiry has been Sent', {
+      style: {
+        border: '1px solid #fd0',
+        padding: '10px',
+        color: '#333333',
+      },
+      iconTheme: {
+        primary: '#333333',
+        secondary: '#fd0',
+      },
+    });
     emailjs
       .send(SERVICE_ID_EMAIL,EMAILJS_TEMPLATE_ID, templateParams,EMAIL_USER_ID)
       .then(
         (response) => {
-          setLoading(false)
-          toast.success('Enquiry has been Sent', {
-            style: {
-              border: '1px solid #fd0',
-              padding: '10px',
-              color: '#333333',
-            },
-            iconTheme: {
-              primary: '#333333',
-              secondary: '#fd0',
-            },
-          });
+          console.log(response)
         },
         (error) => {
           setLoading(false)
