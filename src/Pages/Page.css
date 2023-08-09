@@ -30,12 +30,9 @@
     padding-bottom: 0.16em;
     cursor: pointer;
   }
-  .soci{
-    color: #fff;
-    cursor: pointer;
-  }
+  
   .soci:hover{
-    color: #fd0;
+    color: #fd0 !important;
   }
   .social-icons-desktop {
     display: none; 
@@ -43,6 +40,8 @@
       bottom: 10em;
       background-color: #333333;
       right: -0.4em;
+      color: #fff;
+    cursor: pointer;
       border-radius: 0.4em;
       position:fixed;
       display: block;

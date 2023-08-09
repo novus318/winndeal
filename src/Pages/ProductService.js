@@ -62,7 +62,7 @@ function ProductService() {
     },
     tablet: {
       breakpoint: { max: 800, min: 400 },
-      items: 2
+      items: 1
     },
     mobile: {
       breakpoint: { max: 400, min: 0 },
