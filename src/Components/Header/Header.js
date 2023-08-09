@@ -41,12 +41,12 @@ function Header() {
         <motion.div 
         initial={{ opacity: 0, scale: 1 }}
         animate={{ opacity: 1, scale: 1 }}
-        transition={{ duration: 0.6 }}className='m-auto'>
+        transition={{ duration: 0.6 }}className='ms-auto'>
         <Nav >
         <Link className={navColour ?'nav-li-color me-3':'nav-li me-3'} to='/'>HOME</Link>
         <Link className={navColour ?'nav-li-color me-4':'nav-li me-4'}  to='/about'>ABOUT</Link>
         <Link className={navColour ?'nav-li-color me-4':'nav-li me-4'} to='/product-services'>PRODUCT & SERVICES</Link>
-        <Link className={navColour ?'nav-li-color me-3':'nav-li me-3'}  to='/contact'>CONTACT</Link>
+        <Link className={navColour ?'nav-li-color me-3':'nav-li me-3'}  to='/contact'>ASK FOR A QUOTE</Link>
         </Nav>
         </motion.div> 
       </Navbar.Collapse>
