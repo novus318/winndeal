@@ -35,28 +35,23 @@
     color: #fd0 !important;
   }
   .social-icons-desktop {
-    display: none; 
-    @media (min-width: 900px) {
       bottom: 10em;
-      background-color: #333333;
+      background-color: #333333 !important;
       right: -0.4em;
-      color: #fff;
+      color: #fff !important;
     cursor: pointer;
       border-radius: 0.4em;
       position:fixed;
       display: block;
-    }
   }
   
   .social-icon-mobile {
-    display: none;
   
-    @media (max-width: 768px) {
       display: block;
       position: fixed;
       bottom: 2em;
       right: 1em;
-    }
+  
   }
   .locate{
     cursor: pointer;
