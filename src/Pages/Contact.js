@@ -18,7 +18,7 @@ import ContactIcons from "../Components/ContactIcons";
 import Footer from "../Components/Footer/Footer";
 import toast from "react-hot-toast";
 import Loading from "../Components/Loading";
-import ChatBot from "../Components/ChatBot";
+
 function Contact() {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
@@ -106,7 +106,6 @@ const EMAIL_USER_ID='eAIazN3sfCYuXsB-i'
       <Layout title={"Contact Us"}>
         <Header />
         <ContactIcons/>
-        <ChatBot/>
         <div className="mt-5 pt-5" style={{ background: "#fd0" }}>
           <motion.div
             initial={{ opacity: 0, y: -20 }}
@@ -179,25 +178,23 @@ const EMAIL_USER_ID='eAIazN3sfCYuXsB-i'
               </div>
             </div>
           </motion.div>
-          <div onClick={Location} className='col-11 col-md-6 m-auto pb-5 locate'>
+          <div onClick={Location} className='col-10 ms-5 col-md-5 me-auto pb-5 locate'>
         <MDBCard className='p-1'>
       <motion.div
         initial={{ opacity: 0, y: -50 }} animate={controls}
         transition={{ delay: 0.2 }}
         className='section'
       >
-        <MDBCardHeader className='text-center'><MDBIcon className="l-arrow" fas icon="map-marked-alt" size='3x'/></MDBCardHeader>
+        <MDBCardHeader className='text-center'><MDBIcon className="l-arrow" fas icon="map-marked-alt" size='2x'/></MDBCardHeader>
         <MDBCardBody>
         <MDBCardTitle>
-        <h2 className='page-head'>
+        <h3 className='page-head'>
           STORE LOCATION
-        </h2>
+        </h3>
         </MDBCardTitle>
         <MDBCardText className='para'>
-        WINN DEAL
 Office-B19-190 ,Block B
 SRTI Park, Sharjah - United Arab Emirates<br/>
-TRN : 104073345100003<br/>
 Phone : +97143985048
         </MDBCardText>
         </MDBCardBody>

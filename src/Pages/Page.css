@@ -20,12 +20,6 @@
     font-weight: 700 !important;
     font-family:  Netflix Sans,Helvetica Neue,Segoe UI,Roboto,Ubuntu,sans-serif
 }
-.contact-icons {
-    position: fixed;
-    bottom: 2em;
-    right: 1em;
-    display: flex;
-  }
   .wapp{
     color: #fff;
     background-color:#21bd5a;
@@ -36,15 +30,34 @@
     padding-bottom: 0.16em;
     cursor: pointer;
   }
-  .mail{
-    color: #D44638;
-    background-color:transparent;
-    border-radius: 0.6em;
-    padding-left: 0.2em;
-    padding-right: 0.2em;
-    padding-top: 0.16em;
-    padding-bottom: 0.16em;
+  .soci{
+    color: #fff;
     cursor: pointer;
+  }
+  .soci:hover{
+    color: #fd0;
+  }
+  .social-icons-desktop {
+    display: none; 
+    @media (min-width: 768px) {
+      bottom: 10em;
+      background-color: #333333;
+      right: -0.4em;
+      border-radius: 0.4em;
+      position:fixed;
+      display: block;
+    }
+  }
+  
+  .social-icon-mobile {
+    display: none;
+  
+    @media (max-width: 768px) {
+      display: block;
+      position: fixed;
+      bottom: 2em;
+      right: 1em;
+    }
   }
   .locate{
     cursor: pointer;
@@ -63,7 +76,7 @@
 .Bot{
   position: fixed;
     top: 7em;
-    right: 1em;
+    left: 1em;
 }
 .bot-head{
   background-color: #333333;

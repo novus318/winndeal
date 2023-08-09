@@ -1,6 +1,8 @@
 import React from 'react'
 import Header from '../Components/Header/Header'
 import { motion } from 'framer-motion';
+import Carousel from 'react-multi-carousel';
+import 'react-multi-carousel/lib/styles.css';
 import {
   MDBCard,
   MDBCardBody,
@@ -8,14 +10,13 @@ import {
   MDBCardImage
 } from 'mdb-react-ui-kit';
 import Products from '../Components/Products/Products';
-import ContactIcons from '../Components/ContactIcons';
 import Footer from '../Components/Footer/Footer';
 import Layout from '../Components/Layout';
 import Installation from  '../Images/Installation.png'
 import Maintenance from  '../Images/Maintenance.png'
 import Security from  '../Images/Security.png'
 import Consultation from  '../Images/Consultation.png'
-import ChatBot from '../Components/ChatBot';
+import OS from  '../Images/os.png'
 function ProductService() {
   const serviceList = [
     {
@@ -37,13 +38,37 @@ function ProductService() {
         'We conduct comprehensive network security audits to identify vulnerabilities in your network defenses.',
     },
     {
+      name: 'OS Configuration',
+      image: OS,
+      description:
+        'Customize and configure operating systems to meet your specific requirements and preferences.',
+    },
+    {
       name: 'Expert IT Consultation',
       image: Consultation,
       description:
         'Get expert IT consultation services to make informed decisions and optimize your technology investments.',
     },
   ];
-
+  const responsive = {
+    superLargeDesktop: {
+      // the naming can be any, depends on you.
+      breakpoint: { max: 2000, min: 1100 },
+      items: 4
+    },
+    desktop: {
+      breakpoint: { max: 1000, min: 800 },
+      items: 3
+    },
+    tablet: {
+      breakpoint: { max: 800, min: 400 },
+      items: 2
+    },
+    mobile: {
+      breakpoint: { max: 400, min: 0 },
+      items: 1
+    }
+  }
   const listItem1Variants = {
     hidden: { opacity: 0, y: -20 },
     visible: { opacity: 1, y: 0 },
@@ -53,8 +78,6 @@ function ProductService() {
     <>
     <Layout title={"Products & Services"}>
     <Header/>
-    <ContactIcons/>
-    <ChatBot/>
     <div className='mt-5 pt-5'>
     <div className='mt-5'>
       <motion.div
@@ -74,10 +97,10 @@ function ProductService() {
         >
           Our Services
         </motion.h1>
-        <div className='row container-fluid m-auto'>
+        <div className='container-fluid m-auto'>
+        <Carousel responsive={responsive}>
         {serviceList.map((service, index) => (
-          <div className='col-11 col-md-3 mb-3'>
-           <MDBCard className='p-1'>
+           <MDBCard className='p-1 me-4'>
                   <motion.div
                     key={index}
                     variants={listItem1Variants}
@@ -100,8 +123,8 @@ function ProductService() {
                     </MDBCardBody>
                   </motion.div>
                   </MDBCard>
-                  </div>
                 ))}
+                </Carousel>
         </div>
       </motion.div>
       <Products/>

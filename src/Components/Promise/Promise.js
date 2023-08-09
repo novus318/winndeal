@@ -46,9 +46,9 @@ function Promise() {
       animate={controls}
       transition={{ duration: 1 }}
       style={{
-      transform: 'translate(-10%)'}} className='col-11 col-md-5 mt-2 pt-5 me-auto'>
+      transform: 'translate(-10%)'}} className='col-11 col-md-5 mt-2 pt-5 m-auto'>
         <h4 className='para '>
-        With unwavering Assurance,<br/><br/>Our core focus lies in delivering exceptional services encompassing System Integration, IT Infrastructure, Cloud, Software, and Security solutions.
+        With unwavering Assurance,<br/><br/>Our core focus lies in delivering exceptional services encompassing System Integration, IT Infrastructure, Servers, Software, and Security solutions.
         </h4>
     </motion.div>
     <motion.div

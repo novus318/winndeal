@@ -30,7 +30,7 @@ function ChatBot() {
   return (
     <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} className='Bot'>
      {bot&&(
-       <motion.div initial={{ x: '100%' }} animate={{ x: '0' }} exit={{ x: '100%' }}>
+       <motion.div initial={{ x: '-100%' }} animate={{ x: '0' }} exit={{ x: '-100%' }}>
         <Chatbot
         config={config}
         messageParser={MessageParser}

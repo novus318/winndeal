@@ -29,6 +29,11 @@ function Products() {
   }, []);
   const products = [
     {
+      name: 'LAPTOPS',
+      image: laptopImage,
+      description: 'Our Laptops combine portability with performance. Whether you are a business traveler or a student, these laptops offer productivity and entertainment on the go.',
+    },
+    {
       name: 'SERVERS',
       image: serverImage,
       description: 'Our Servers are designed for high-performance computing, handling heavy workloads with ease. They provide reliable and scalable solutions for businesses of all sizes.',
@@ -42,11 +47,6 @@ function Products() {
       name: 'UPS',
       image: upsImage,
       description: 'Our UPS (Uninterruptible Power Supply) systems protect your valuable equipment from power interruptions and fluctuations. Ensure your critical systems stay operational during outages.',
-    },
-    {
-      name: 'LAPTOPS',
-      image: laptopImage,
-      description: 'Our Laptops combine portability with performance. Whether you are a business traveler or a student, these laptops offer productivity and entertainment on the go.',
     },
     {
       name: 'NETWORK & SECURITY',
@@ -72,11 +72,11 @@ function Products() {
             cursor: "pointer",
             transition: "color 0.2s ease",
           }}
-          className="text-center page-head mt-3 mb-5 display-4"
+          className="text-center page-head mt-3 mb-5 pb-5 display-4"
         >
           Our Products
         </motion.h1>
-        <motion.div className="container-fluid m-auto">
+        <motion.div className="container-fluid m-auto mb-5">
           {products.map((product, index) => (
             <motion.div
               key={index}
@@ -84,7 +84,7 @@ function Products() {
               initial="hidden"
               animate="visible"
               transition={{ delay: index * 0.2 }}
-              className="row mb-2 pb-5 justify-content-center"
+              className="row mb-2 pb-3 justify-content-center"
             >
               <motion.img
               animate={{ opacity: 0.85, scale: 1 }}
@@ -93,11 +93,11 @@ function Products() {
                 style={{ borderRadius: "10%" }}
                 className="col-11 col-md-5 me-4"
               />
-              <motion.div className="col-11 col-md-6 mt-auto pt-3 mb-auto">
+              <motion.div className="col-11 col-md-6 mt-auto pt-1 mb-auto">
                 <h1 className="p-head text-center mb-3" >{product.name}</h1>
-                <h4 className="p-d">{product.description}</h4>
+                <h5 className="p-d">{product.description}</h5>
               </motion.div>
-              <hr className="mt-5"/>
+              <hr className="mt-3"/>
             </motion.div>
           ))}
         </motion.div>

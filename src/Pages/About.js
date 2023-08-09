@@ -8,7 +8,6 @@ import Cards from "../Components/Cards/Cards";
 import ContactIcons from "../Components/ContactIcons";
 import Footer from "../Components/Footer/Footer";
 import Layout from "../Components/Layout";
-import ChatBot from "../Components/ChatBot";
 
 function About() {
   const controls = useAnimation();
@@ -103,7 +102,7 @@ function About() {
             <h4 className="para">
               {" "}
               Our strategic partnerships and highest levels of partnership
-              accreditations with global brands like HPE, Dell, Lenovo, Aruba,
+              accreditations with global brands like HP, Dell, Lenovo, Aruba,
               APC, Microsoft, and many others enable us to provide our customers
               with the latest technologies and solutions.
             </h4>
@@ -125,7 +124,6 @@ function About() {
           </h4>
         </motion.div>
       </motion.div>
-      <ChatBot/>
       <Cards/>
       <Footer/>
      </Layout>

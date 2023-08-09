@@ -1,17 +1,33 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { motion } from "framer-motion"
 import "./Banner.css"
-import banner3 from "../../Images/baner1.png"
+import banner2 from "../../Images/baner2.png"
+import banner1 from "../../Images/baner1.png"
 import { TypeAnimation } from 'react-type-animation';
 function Banner() {
+  const images = [banner1, banner2];
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
+    }, 3000);
+
+    return () => clearInterval(interval);
+    // eslint-disable-next-line
+  }, []);
+
+  const currentImage = images[currentImageIndex];
   return (
-    <section className='banner mt-5'>
-       <div className='col-12 col-md-6 align-items-center'>
-        <motion.img initial={{ opacity: 0, scale: 1.3 }}
-           animate={{ opacity: 0.9, scale: 1 }}
-           transition={{ duration: 1.5 }} src={banner3} alt={banner3} className='img-fluid ban-img ' />
+    <section className='banner mt-5 row'>
+      
+       <div className='col-11 col-sm-6 col-md-4 col-lg-4 ms-3 mt-auto mb-auto'>
+        <motion.img
+        key={currentImageIndex}
+        initial={{ opacity: 0, scale: 1.1 }}
+           animate={{ opacity: 0.8, scale: 1 }}
+           transition={{ duration: 1 }} src={currentImage} alt={banner1} className='img-fluid ban-img ' />
         </div>
-        <div className='container col-11 col-md-7'>
+        <div className='container mt-auto mb-auto col-11 col-sm-6 col-md-7 col-lg-7'>
           
           <motion.div
            initial={{ opacity: 0, scale: 0.6 }}
