@@ -7,6 +7,7 @@ import Cards from '../Components/Cards/Cards'
 import Products from '../Components/Products/Products'
 import Footer from '../Components/Footer/Footer'
 import ContactIcons from '../Components/ContactIcons'
+import Mission from '../Components/Mission/Mission'
 function Home() {
   return (
     <>
@@ -15,7 +16,8 @@ function Home() {
     <Header/>
     <Banner/>
     <Promise/>
-    <Products/> 
+    <Products/>
+    <Mission/> 
     <Cards/>
     <ContactIcons/>
     <Footer/>

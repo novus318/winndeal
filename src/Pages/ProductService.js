@@ -16,6 +16,7 @@ import Installation from  '../Images/Installation.png'
 import Maintenance from  '../Images/Maintenance.png'
 import Security from  '../Images/Security.png'
 import Consultation from  '../Images/Consultation.png'
+import Remote from '../Images/Remote.png'
 import OS from  '../Images/os.png'
 function ProductService() {
   const serviceList = [
@@ -30,6 +31,11 @@ function ProductService() {
       image: Maintenance,
       description:
         'Our team offers ongoing maintenance and support to ensure your systems run smoothly and efficiently.',
+    },
+    {
+      name: 'Remote Assist Services',
+      image: Remote,
+      description: 'Our remote services allow us to assist you virtually, solving IT issues and providing support remotely.',
     },
     {
       name: 'Network Security Audits',
