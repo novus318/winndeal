@@ -6,6 +6,8 @@ import workstationImage from "../../Images/workStation.png";
 import upsImage from "../../Images/UPS.png";
 import laptopImage from "../../Images/laptops.png";
 import networkImage from "../../Images/network.png";
+import Peripherals from "../../Images/peripherals.png";
+import printerImage from "../../Images/printer.png"
 function Products() {
   const controls = useAnimation();
   const handleScroll = () => {
@@ -34,9 +36,19 @@ function Products() {
       description: 'Our Laptops combine portability with performance. Whether you are a business traveler or a student, these laptops offer productivity and entertainment on the go.',
     },
     {
+      name: 'PC & LAPTOP PERIPHERALS',
+      image: Peripherals,
+      description: 'Enhance your computing experience with our range of peripherals',
+    },
+    {
       name: 'SERVERS',
       image: serverImage,
       description: 'Our Servers are designed for high-performance computing, handling heavy workloads with ease. They provide reliable and scalable solutions for businesses of all sizes.',
+    },
+    {
+      name: 'PRINTERS & SCANNERS',
+      image: printerImage,
+      description: 'Efficiently manage your printing and scanning needs with our range of printers and scanners',
     },
     {
       name: 'WORKSTATIONS',
@@ -94,7 +106,7 @@ function Products() {
                 className="col-11 col-md-5 me-4"
               />
               <motion.div className="col-11 col-md-6 mt-auto pt-1 mb-auto">
-                <h1 className="p-head text-center mb-3" >{product.name}</h1>
+                <h2 className="p-head text-center mb-3" >{product.name}</h2>
                 <h5 className="p-d">{product.description}</h5>
               </motion.div>
               <hr className="mt-3"/>

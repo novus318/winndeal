@@ -5,14 +5,10 @@ import {
 } from "mdb-react-ui-kit";
 import "./footer.css";
 import React from "react";
-import Asus from '../../Images/asus.png'
-import Dell from '../../Images/dell .png'
-import HP from '../../Images/hp.png'
-import Lenovo from '../../Images/lenovo.png'
-import MS from '../../Images/ms.png'
-import Canon from '../../Images/canon.png'
-import IBM from '../../Images/ibm.png'
-import Samsung from '../../Images/samsung.png'
+import COD from '../../Images/cash-on-delivery.png'
+import Bank from '../../Images/transfer.png'
+import Card from '../../Images/atm-card.png'
+import Loan from '../../Images/loan.png'
 function Footer() {
   const Location = () => {
     window.open("https://goo.gl/maps/Ja7wtrVrpMZC6xHi6");
@@ -46,18 +42,13 @@ SRTI Park, Sharjah - United Arab Emirates</li>
                 <MDBIcon size='3x' onClick={()=>{window.open('https://www.facebook.com/profile.php?id=100093622394715')}} className="s-icons p-3 " fab icon="facebook" />
                 <MDBIcon size='3x' onClick={()=>{window.open('https://www.facebook.com/profile.php?id=100093622394715')}} className="s-icons p-3" fab icon="instagram" />
               </div>
-
-              <div className="col-9 mb-3 col-md-4 text-center">
-                <h3 className="f-head text-uppercase">Dealers</h3>
+              <div className="col-9 mt-auto mb-auto col-md-4">
                 <div className="row col-11 col-md-7  m-auto">
-                <img src={MS} alt={MS} className="col-3 mt-3" />
-                <img src={Lenovo} alt={Lenovo} className="col-3 mt-3" />
-                <img src={HP} alt={HP} className="col-3 mt-3" />
-                <img src={Dell} alt={Dell} className="col-3 mt-3" />
-                <img src={Asus} alt={Asus} className="col-3 mt-3" />
-                <img src={Samsung} alt={Samsung} className="col-3 mt-3" />
-                <img src={IBM} alt={IBM} className="col-3 mt-3" />
-                <img src={Canon} alt={Canon} className="col-3 mt-3" />
+                <h5 className="f-head">We Accept :</h5>
+                <img src={COD} alt={COD} className="col-3 mt-3" />
+                <img src={Card} alt={Card} className="col-3 mt-3" />
+                <img src={Bank} alt={Bank} className="col-3 mt-3" />
+                <img src={Loan} alt={Loan} className="col-3 mt-3" />
                 </div>
               </div>
             </MDBRow>

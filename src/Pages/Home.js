@@ -10,6 +10,7 @@ import ContactIcons from '../Components/ContactIcons'
 import Mission from '../Components/Mission/Mission'
 import ChatBot from '../Components/ChatBot'
 import { useLocation } from 'react-router-dom'
+import Brands from '../Components/Brands'
 function Home() {
   const location = useLocation();
 
@@ -26,7 +27,8 @@ function Home() {
     <Banner/>
     <Promise/>
     <Products/>
-    <Mission/> 
+    <Brands/>
+    <Mission/>
     <Cards/>
     <ChatBot/>
     <ContactIcons/>

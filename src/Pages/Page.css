@@ -6,6 +6,9 @@
     border-radius: 0.3em;
     letter-spacing: 0.13em;
 }
+.no-focus-outline:focus {
+  outline: none;
+}
 .form-btn{
     border: solid 0.12em #fff;
     border-radius: 0.4em;

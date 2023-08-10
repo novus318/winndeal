@@ -17,7 +17,9 @@ import Maintenance from  '../Images/Maintenance.png'
 import Security from  '../Images/Security.png'
 import Consultation from  '../Images/Consultation.png'
 import Remote from '../Images/Remote.png'
+import Contract from '../Images/contract.png'
 import OS from  '../Images/os.png'
+import CCTV from  '../Images/Surveillance.png'
 import { useLocation } from 'react-router-dom';
 function ProductService() {
   const location = useLocation();
@@ -29,8 +31,20 @@ function ProductService() {
   }, [location]);
   const serviceList = [
     {
+      name: 'Network & IT AMC',
+      image: Contract,
+      description:
+        'Service offers management of network infrastructure along panoramic hardware & software maintenance',
+    },
+    {
       name: 'Installation and Setup',
       image: Installation,
+      description:
+        'We provide professional installation and setup services for all your IT infrastructure needs.',
+    },
+    {
+      name: 'Security Solutions',
+      image: CCTV,
       description:
         'We provide professional installation and setup services for all your IT infrastructure needs.',
     },
