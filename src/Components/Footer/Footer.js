@@ -19,14 +19,14 @@ function Footer() {
     <div>
       <div className="shadow-overlay"></div>
       <MDBFooter className="footer" color="white">
-        <section className="text-center col-12 pt-4">
+        <section className="text-center col-12 pt-4 cotainer-fluid">
           <h2 className="f-head">WINNDEAL</h2>
           <h5 className="f-p">We deliver cutting-edge IT solutions tailored to your business needs in UAE,<br/>Our team of experts is committed to providing top-notch services that drive results</h5>
         </section>
-        <div className="p-2">
+        <div className="container-fluid">
           <section className="mt-4">
             <MDBRow className="justify-content-center m-auto">
-              <div className="col-9 mb-2 col-md-3 container-fluid">
+              <div className="col-11 mb-2 col-md-3 container-fluid">
               <h5 className="text-uppercase f-head">Contact Us</h5>
                 <ul className="list-unstyled mb-0 ">
                   <li className="f-head">Phone : +97143985048</li>
@@ -35,14 +35,14 @@ function Footer() {
 SRTI Park, Sharjah - United Arab Emirates</li>
                 </ul>
               </div>
-              <div className="col-9 col-md-4 mt-auto mb-auto text-center">
+              <div className="col-12 col-md-4 mt-auto mb-auto text-center">
                 <MDBIcon size='3x' onClick={()=>{window.open(`https://wa.me/${phoneNumber}`, "_blank")}} className="p-3 s-icons" fab icon="whatsapp-square" />
 
                 <MDBIcon size='3x' onClick={()=>{window.open('https://www.linkedin.com/company/winndeal/about/?viewAsMember=true')}} className="s-icons p-3" fab icon="linkedin" />
                 <MDBIcon size='3x' onClick={()=>{window.open('https://www.facebook.com/profile.php?id=100093622394715')}} className="s-icons p-3 " fab icon="facebook" />
                 <MDBIcon size='3x' onClick={()=>{window.open('https://www.facebook.com/profile.php?id=100093622394715')}} className="s-icons p-3" fab icon="instagram" />
               </div>
-              <div className="col-9 mt-auto mb-auto col-md-4">
+              <div className="col-11 mt-auto mb-auto col-md-4">
                 <div className="row col-11 col-md-7  m-auto">
                 <h5 className="f-head">We Accept :</h5>
                 <img src={COD} alt={COD} className="col-3 mt-3" />
@@ -56,7 +56,7 @@ SRTI Park, Sharjah - United Arab Emirates</li>
         </div>
 
         <div
-          className="text-center p-3"
+          className="text-center p-3 mt-2"
           style={{ backgroundColor: "rgba(0, 0, 0, 0.2)" }}
         >
           &copy; 2023 Designed & Developed by{" "}

@@ -41,7 +41,7 @@ function Brands() {
       };
 
   return (
-    <div className="container-fluid row">
+    <div className="container-fluid row m-auto">
     <motion.h1
     whileHover={{ scale: 1.1, color: '#fd0' }}
       whileTap={{ scale: 0.9 }}
@@ -51,7 +51,7 @@ function Brands() {
       style={{
         cursor: 'pointer',
         transition: 'color 0.2s ease',
-      }} className="page-head text-center">Authorised Dealers</motion.h1>
+      }} className="page-head text-center">Brands We Boost</motion.h1>
     <Slider {...settings}>
       {brandImages.map((image, index) => (
         <div key={index} className='p-5'>
