@@ -38,7 +38,7 @@ function Products() {
     {
       name: 'PC & LAPTOP PERIPHERALS',
       image: Peripherals,
-      description: 'Enhance your computing experience with our range of peripherals',
+      description: 'Enhance your computing experience with our range of peripherals designed to optimize functionality and elevate your setup enabling you to work and play with unprecedented ease',
     },
     {
       name: 'SERVERS',
@@ -48,7 +48,7 @@ function Products() {
     {
       name: 'PRINTERS & SCANNERS',
       image: printerImage,
-      description: 'Efficiently manage your printing and scanning needs with our range of printers and scanners',
+      description: 'Streamline your printing and scanning needs efficiently with our diverse range of devices, offering versatile solutions to meet your requirements.',
     },
     {
       name: 'WORKSTATIONS',

@@ -80,13 +80,12 @@ function ProductService() {
   ];
   const responsive = {
     superLargeDesktop: {
-      // the naming can be any, depends on you.
       breakpoint: { max: 2000, min: 1500 },
       items: 4
     },
     desktop: {
       breakpoint: { max: 1500, min: 800 },
-      items: 3
+      items: 4
     },
     tablet: {
       breakpoint: { max: 800, min: 400 },
