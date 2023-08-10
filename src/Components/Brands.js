@@ -24,6 +24,20 @@ function Brands() {
             autoplaySpeed: 1000,
             slidesToShow: 5,
             slidesToScroll: 1,
+            responsive: [
+              {
+                breakpoint: 1024,
+                settings: {
+                  slidesToShow: 4,
+                },
+              },
+              {
+                breakpoint: 600,
+                settings: {
+                  slidesToShow: 2, 
+                },
+              },
+            ]
       };
 
   return (
