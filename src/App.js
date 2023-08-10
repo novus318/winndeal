@@ -19,6 +19,17 @@ useEffect(() => {
     setLoading(false)
   },1700)
 }, [])
+useEffect(() => {
+  const disableContextMenu = (event) => {
+    event.preventDefault();
+  };
+
+  window.addEventListener('contextmenu', disableContextMenu);
+
+  return () => {
+    window.removeEventListener('contextmenu', disableContextMenu);
+  };
+}, []);
   return (
   <>
   <Layout>
