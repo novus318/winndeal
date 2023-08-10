@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Header from '../Components/Header/Header'
 import { motion } from 'framer-motion';
 import Carousel from 'react-multi-carousel';
@@ -18,7 +18,15 @@ import Security from  '../Images/Security.png'
 import Consultation from  '../Images/Consultation.png'
 import Remote from '../Images/Remote.png'
 import OS from  '../Images/os.png'
+import { useLocation } from 'react-router-dom';
 function ProductService() {
+  const location = useLocation();
+
+  useEffect(() => {
+    if (location.pathname === '/product-services') {
+      window.scrollTo(0, 0);
+    }
+  }, [location]);
   const serviceList = [
     {
       name: 'Installation and Setup',

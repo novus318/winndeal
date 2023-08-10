@@ -1,8 +1,31 @@
-import React from "react";
+import { MDBIcon } from "mdb-react-ui-kit";
+import React, { useEffect, useState } from "react";
 import { Helmet } from "react-helmet";
 
 function Layout({children, title, description, keywords, author }) {
-  
+  const [showGoToTop, setShowGoToTop] = useState(false);
+
+  const handleScroll = () => {
+    if (window.scrollY > 400) {
+      setShowGoToTop(true);
+    } else {
+      setShowGoToTop(false);
+    }
+  };
+
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
   return (
     <div>
       
@@ -14,6 +37,9 @@ function Layout({children, title, description, keywords, author }) {
         <title>{title}</title>
       </Helmet>
       {children}
+      {showGoToTop && (
+        <MDBIcon far icon="caret-square-up" size='2x' className="go-to-top-button" onClick={scrollToTop}/>
+      )}
     </div>
   );
 }

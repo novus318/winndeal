@@ -18,6 +18,7 @@ import ContactIcons from "../Components/ContactIcons";
 import Footer from "../Components/Footer/Footer";
 import toast from "react-hot-toast";
 import Loading from "../Components/Loading";
+import { useLocation } from "react-router-dom";
 
 function Contact() {
   const [name, setName] = useState("");
@@ -100,6 +101,14 @@ const EMAIL_USER_ID='eAIazN3sfCYuXsB-i'
     return () => window.removeEventListener('scroll', handleScroll);
     // eslint-disable-next-line
   }, []);
+
+  const location = useLocation();
+
+  useEffect(() => {
+    if (location.pathname === '/contact') {
+      window.scrollTo(0, 0);
+    }
+  }, [location]);
   return (
     <>
     {loading ? (<Loading/>):(<>

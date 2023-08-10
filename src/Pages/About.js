@@ -8,9 +8,17 @@ import Cards from "../Components/Cards/Cards";
 import ContactIcons from "../Components/ContactIcons";
 import Footer from "../Components/Footer/Footer";
 import Layout from "../Components/Layout";
+import { useLocation } from "react-router-dom";
 
 function About() {
   const controls = useAnimation();
+  const location = useLocation();
+
+  useEffect(() => {
+    if (location.pathname === '/about') {
+      window.scrollTo(0, 0);
+    }
+  }, [location]);
 
   const handleScroll = () => {
     const scrollY = window.scrollY;

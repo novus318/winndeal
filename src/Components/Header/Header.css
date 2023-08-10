@@ -27,6 +27,40 @@
     text-decoration: none;
     color: #fd0;
 }
+.nav-li-ask{
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, San Francisco, Roboto, Segoe UI, Ubuntu, Helvetica Neue, sans-serif !important;
+    font-weight: 900 !important;
+    text-decoration: none;
+    color: #fd0;
+    background-color: #c9c9c965;
+    border-radius: 0.3em;
+    padding-left: 3px;
+    padding-right: 3px;
+    letter-spacing: 0.18em;
+}
+.nav-li-ask:hover{
+    color:#ffffff;
+    border-bottom: 2px solid #ffffff;
+    background:none;
+    border-radius: 0;
+}
+.nav-li-ask-color:hover{
+    color:#ffffff;
+    border-bottom: 2px solid #ffffff;
+    background:none;
+    border-radius: 0;
+}
+.nav-li-ask-color{
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, San Francisco, Roboto, Segoe UI, Ubuntu, Helvetica Neue, sans-serif !important;
+    font-weight: 900 !important;
+    text-decoration: none;
+    color: #333333;
+    background-color: #fff7c091;
+    border-radius: 0.3em;
+    padding-left: 3px;
+    padding-right: 3px;
+    letter-spacing: 0.18em;
+}
 .nav-li-color{
     font-family:system-ui, -apple-system, BlinkMacSystemFont, San Francisco, Roboto, Segoe UI, Ubuntu, Helvetica Neue, sans-serif !important;
     font-weight: 800;

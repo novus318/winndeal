@@ -10,10 +10,10 @@ function ContactIcons() {
 
   useEffect(() => {
     const handleResize = () => {
-      setIsMobile(window.innerWidth <= 768); // Adjust the threshold if needed
+      setIsMobile(window.innerWidth <= 768);
     };
 
-    handleResize(); // Initial check
+    handleResize();
     window.addEventListener("resize", handleResize);
 
     return () => {
@@ -25,15 +25,17 @@ function ContactIcons() {
     initial={{ opacity: 0, y: -50 }} animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.9 }}
         >
-        {!isMobile ? ( <motion.div
+        {!isMobile ? ( <><motion.div
           initial={{ opacity: 0, y: -50 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.6,delay: 0.5 }} className="social-icons-desktop p-3">
     <MDBIcon fab icon="linkedin-in" className="soci mb-4" size='2x' onClick={()=>{window.open('https://www.linkedin.com/company/winndeal/about/?viewAsMember=true')}}/><br/>
     <MDBIcon fab icon="instagram" className="soci mb-4" size='2x'onClick={()=>{window.open('https://www.facebook.com/profile.php?id=100093622394715')}}/><br/>
-    <MDBIcon fab icon="facebook" className="soci mb-4" size='2x'onClick={()=>{window.open('https://www.facebook.com/profile.php?id=100093622394715')}}/><br/>
-    <MDBIcon fab icon="whatsapp" className="soci" size='2x'onClick={openWhatsApp}/>
-  </motion.div>):(
+    <MDBIcon fab icon="facebook" className="soci" size='2x'onClick={()=>{window.open('https://www.facebook.com/profile.php?id=100093622394715')}}/><br/>
+  </motion.div>
+  <div className="me-2 social-icon-mobile" onClick={openWhatsApp}>
+  <MDBIcon fab icon="whatsapp" className="wapp" size='2x'/>
+  </div></>):(
     <div className="me-2 social-icon-mobile" onClick={openWhatsApp}>
     <MDBIcon fab icon="whatsapp" className="wapp" size='2x'/>
     </div>)}

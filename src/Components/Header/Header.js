@@ -46,7 +46,7 @@ function Header() {
         <Link className={navColour ?'nav-li-color me-3':'nav-li me-3'} to='/'>HOME</Link>
         <Link className={navColour ?'nav-li-color me-4':'nav-li me-4'}  to='/about'>ABOUT</Link>
         <Link className={navColour ?'nav-li-color me-4':'nav-li me-4'} to='/product-services'>PRODUCT & SERVICES</Link>
-        <Link className={navColour ?'nav-li-color me-3':'nav-li me-3'}  to='/contact'>ASK FOR A QUOTE</Link>
+        <Link className={navColour ?'nav-li-ask-color me-3':'nav-li-ask me-3'}  to='/contact'>Ask FOR A QUOTE</Link>
         </Nav>
         </motion.div> 
       </Navbar.Collapse>

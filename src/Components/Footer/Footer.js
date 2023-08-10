@@ -30,7 +30,7 @@ function Footer() {
         <div className="p-2">
           <section className="mt-4">
             <MDBRow className="justify-content-center m-auto">
-              <div className="col-9 mb-2 col-md-3 mb-5">
+              <div className="col-9 mb-2 col-md-3 container-fluid">
               <h5 className="text-uppercase f-head">Contact Us</h5>
                 <ul className="list-unstyled mb-0 ">
                   <li className="f-head">Phone : +97143985048</li>
@@ -39,17 +39,17 @@ function Footer() {
 SRTI Park, Sharjah - United Arab Emirates</li>
                 </ul>
               </div>
-              <div className="col-9 mb-3 col-md-4 mt-auto mb-auto text-center pb-4">
-                <MDBIcon size='3x' onClick={()=>{window.open(`https://wa.me/${phoneNumber}`, "_blank")}} className="me-5 s-icons" fab icon="whatsapp-square" />
+              <div className="col-9 col-md-4 mt-auto mb-auto text-center">
+                <MDBIcon size='3x' onClick={()=>{window.open(`https://wa.me/${phoneNumber}`, "_blank")}} className="p-3 s-icons" fab icon="whatsapp-square" />
 
-                <MDBIcon size='3x' onClick={()=>{window.open('https://www.linkedin.com/company/winndeal/about/?viewAsMember=true')}} className="s-icons me-5" fab icon="linkedin" />
-                <MDBIcon size='3x' onClick={()=>{window.open('https://www.facebook.com/profile.php?id=100093622394715')}} className="s-icons me-5" fab icon="facebook" />
-                <MDBIcon size='3x' onClick={()=>{window.open('https://www.facebook.com/profile.php?id=100093622394715')}} className="s-icons" fab icon="instagram" />
+                <MDBIcon size='3x' onClick={()=>{window.open('https://www.linkedin.com/company/winndeal/about/?viewAsMember=true')}} className="s-icons p-3" fab icon="linkedin" />
+                <MDBIcon size='3x' onClick={()=>{window.open('https://www.facebook.com/profile.php?id=100093622394715')}} className="s-icons p-3 " fab icon="facebook" />
+                <MDBIcon size='3x' onClick={()=>{window.open('https://www.facebook.com/profile.php?id=100093622394715')}} className="s-icons p-3" fab icon="instagram" />
               </div>
 
               <div className="col-9 mb-3 col-md-4 text-center">
                 <h3 className="f-head text-uppercase">Dealers</h3>
-                <div className="row col-8  m-auto">
+                <div className="row col-11 col-md-7  m-auto">
                 <img src={MS} alt={MS} className="col-3 mt-3" />
                 <img src={Lenovo} alt={Lenovo} className="col-3 mt-3" />
                 <img src={HP} alt={HP} className="col-3 mt-3" />

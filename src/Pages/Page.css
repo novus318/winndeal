@@ -49,8 +49,8 @@
   
       display: block;
       position: fixed;
-      bottom: 2em;
-      right: 1em;
+      bottom: 4em;
+      right: 0em;
   
   }
   .locate{
@@ -69,9 +69,10 @@
 }
 .Bot{
   position: fixed;
-    top: 7em;
+    bottom:0em;
     left: 1em;
 }
+
 .bot-head{
   background-color: #333333;
   color: #fff;
@@ -90,7 +91,30 @@
   padding-top: 0.16em;
   padding-bottom: 0.16em;
   cursor: pointer;
+  margin-bottom: 0.3em;
+}
+.go-to-top-button{
+  position: fixed;
+  bottom: 0.5em;
+  right: 0.3em;
+  background-color: #333333;
+  color: #fff;
+  opacity: 0.7;
+  border-radius: 0.2em;
+    padding-left: 0.16em;
+    padding-right: 0.16em;
+    padding-top: 0.11em;
+    padding-bottom: 0.11em;
+    cursor: pointer;
+}
+
+.react-chatbot-kit-chat-container {
+  max-height: 25em;
+}
+.react-chatbot-kit-chat-message-container{
+  height: 25em !important;
+  max-height: 25em !important;
 }
 .react-chatbot-kit-chat-inner-container {
-max-height: 25em;
+height: 25em !important;
 }
