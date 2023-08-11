@@ -9,11 +9,12 @@ import HP from '../Images/hp.png';
 import Lenovo from '../Images/lenovo.png';
 import MS from '../Images/ms.png';
 import Canon from '../Images/canon.png';
-import IBM from '../Images/ibm.png';
+import Qnap from '../Images/qnap.png';
 import Samsung from '../Images/samsung.png';
+import Synology from '../Images/synology.png';
 
 
-const brandImages = [MS, Lenovo, HP, Dell, Asus, Samsung, IBM, Canon];
+const brandImages = [MS, Lenovo, HP, Dell, Asus, Samsung, Qnap,Synology, Canon];
 
 function Brands() {
     const settings = {
