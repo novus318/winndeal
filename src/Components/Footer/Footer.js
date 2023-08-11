@@ -64,7 +64,7 @@ SRTI Park, Sharjah - United Arab Emirates</li>
             className="nizam p-1"
             onClick={()=>{window.open('https://nizamudheen.tech')}}
           >
-            NOVUS
+            Muhammed Nizamudheen M
           </span>
         </div>
       </MDBFooter>
