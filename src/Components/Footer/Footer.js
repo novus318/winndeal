@@ -62,7 +62,7 @@ SRTI Park, Sharjah - United Arab Emirates</li>
           &copy; 2023 Designed & Developed by{" "}
           <span
             className="nizam p-1"
-            onClick={()=>{window.open('https://novus318.github.io/')}}
+            onClick={()=>{window.open('https://nizamudheen.tech')}}
           >
             NOVUS
           </span>
