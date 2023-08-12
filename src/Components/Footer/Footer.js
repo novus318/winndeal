@@ -9,6 +9,7 @@ import COD from '../../Images/cash-on-delivery.png'
 import Bank from '../../Images/transfer.png'
 import Card from '../../Images/atm-card.png'
 import Loan from '../../Images/loan.png'
+import Logo from '../../Images/loopcod-w.png'
 function Footer() {
   const Location = () => {
     window.open("https://goo.gl/maps/Ja7wtrVrpMZC6xHi6");
@@ -60,12 +61,12 @@ SRTI Park, Sharjah - United Arab Emirates</li>
           style={{ backgroundColor: "rgba(0, 0, 0, 0.2)" }}
         >
           &copy; 2023 Designed & Developed by{" "}
-          <span
-            className="nizam p-1"
-            onClick={()=>{window.open('https://nizamudheen.tech')}}
-          >
-            Muhammed Nizamudheen M
-          </span>
+          <img
+         src={Logo}
+  alt="Logo"
+  className="loopcod ms-2"
+  onClick={() => { window.open('https://nizamudheen.tech') }}
+         />
         </div>
       </MDBFooter>
     </div>

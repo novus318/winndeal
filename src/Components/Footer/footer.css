@@ -22,16 +22,10 @@
 .s-icons:hover{
 color: #fd0;
 }
-.nizam{
-    color: #fff;
-    text-decoration: none;
-    font-family: Netflix Sans,Helvetica Neue,Segoe UI,Roboto,Ubuntu,sans-serif;
-    cursor: pointer;
-    font-weight: 800;
-    letter-spacing: 0.1em;
+.loopcod{
+   height: 1.2em;
+   cursor: pointer;
 }
-.nizam:hover{
-    background-color: #fff;
-    color: #333333;
-    border-radius: 0.3em;
+.loopcod:hover{
+    transform: scale(1.1);
 }

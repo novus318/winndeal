@@ -17,7 +17,6 @@ import {
 import ContactIcons from "../Components/ContactIcons";
 import Footer from "../Components/Footer/Footer";
 import toast from "react-hot-toast";
-import Loading from "../Components/Loading";
 import { useLocation } from "react-router-dom";
 
 function Contact() {
@@ -25,21 +24,19 @@ function Contact() {
   const [email, setEmail] = useState("");
   const [subject, setSubject] = useState("");
   const [message, setMessage] = useState("");
-  const [loading, setLoading] = useState(false)
+
 
  const SERVICE_ID_EMAIL='service_ruqcbt8'
 const EMAILJS_TEMPLATE_ID='template_ck9zh7o'
 const EMAIL_USER_ID='eAIazN3sfCYuXsB-i'
   const handleEmail = (e) => {
     e.preventDefault();
-    setLoading(true)
     const templateParams = {
       from_name: name,
       from_email: email,
       subject,
       message,
     };
-    setLoading(false)
     toast.success('Enquiry has been Sent', {
       style: {
         border: '1px solid #fd0',
@@ -58,7 +55,6 @@ const EMAIL_USER_ID='eAIazN3sfCYuXsB-i'
           console.log(response)
         },
         (error) => {
-          setLoading(false)
           toast.error('Somthing wrong,Try again', {
             style: {
               border: '1px solid #fd0',
@@ -111,8 +107,7 @@ const EMAIL_USER_ID='eAIazN3sfCYuXsB-i'
   }, [location]);
   return (
     <>
-    {loading ? (<Loading/>):(<>
-      <Layout title={"Contact Us"}>
+    <Layout title={"Contact Us"}>
         <Header />
         <ContactIcons/>
         <div className="mt-5 pt-5" style={{ background: "#fd0" }}>
@@ -213,7 +208,7 @@ Phone : +97143985048
         </div>
         <Footer/>
       </Layout>
-    </>)}</>
+    </>
   );
 }
 
