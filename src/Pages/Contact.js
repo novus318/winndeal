@@ -107,7 +107,7 @@ const EMAIL_USER_ID='eAIazN3sfCYuXsB-i'
   }, [location]);
   return (
     <>
-    <Layout title={"Contact Us"}>
+    <Layout title={"Contact Us"} keywords={'Computer accessories in UAE,computer,hardware,best,consulting firms,IT service providers,AMC,IT remote assistants'}>
         <Header />
         <ContactIcons/>
         <div className="mt-5 pt-5" style={{ background: "#fd0" }}>

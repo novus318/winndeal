@@ -13,13 +13,7 @@ import 'react-chatbot-kit/build/main.css'
 import Load from './Components/Load';
 
 function App() {
- const [loading, setloading] = useState(true)
- useEffect(() => {
-  setloading(true)
-  setTimeout(()=>{
-    setloading(false)
-  },1700)
-}, [])
+
 useEffect(() => {
   const disableContextMenu = (event) => {
     event.preventDefault();
@@ -36,7 +30,7 @@ useEffect(() => {
   <Layout>
   <Router>
    <Routes> 
-  <Route path="/" element={loading? <Load/> : <Home setloading={setloading}/>} />
+  <Route path="/" element={<Home/>} />
   <Route path="/about" element={<About />} />
   <Route path="/product-services" element={<ProductService />} />
   <Route path="/contact" element={<Contact/>} />

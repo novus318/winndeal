@@ -103,7 +103,7 @@ function ProductService() {
 
   return (
     <>
-    <Layout title={"Products & Services"}>
+    <Layout title={"Products & Services"} keywords={'muhammed nizamudheen m,nizamudheen,Winndeal UAE,Laptop,desktop,suppliers in Dubai'}>
     <Header/>
     <div className='mt-5 pt-5'>
     <div className='mt-5'>

@@ -41,7 +41,7 @@ function About() {
   }, []);
   return (
     <>
-     <Layout title={"WinnDeal-About"}>
+     <Layout title={"WinnDeal-About"}keywords={'IT services company,IT firm,IT solutions company,IT company website'}>
      <Header />
       <ContactIcons/>
       <motion.div

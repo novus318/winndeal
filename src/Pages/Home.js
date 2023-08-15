@@ -21,8 +21,8 @@ function Home() {
   }, [location]);
   return (
     <>
-    <Layout title={'WinnDeal'} description={'We deliver cutting-edge IT solutions tailored to your business needs in UAE,Our team of experts is committed to providing top-notch services that drive results'}
-    keywords={'Winndeal,winndeal,WINNDEAL,WinnDeal,UAE,uae,DUBAI,Dubai,dubai,nizamudheen'} author={'Muhammed Nizamudheen M'}>
+    <Layout title={'WinnDeal'} description={'Deliver cutting-edge IT solutions tailored to your business needs in UAE,Providing top-notch services that drive results'}
+    keywords={'Winndeal,windeal,dubai,nizamudheen,sharja,IT support companies,IT services near me,loopcod'} author={'Muhammed Nizamudheen M'}>
     <Header/>
     <Banner/>
     <Promise/>
