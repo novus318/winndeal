@@ -41,7 +41,9 @@ function About() {
   }, []);
   return (
     <>
-     <Layout title={"WinnDeal-About"}keywords={'IT services company,IT firm,IT solutions company,IT company website'}>
+     <Layout
+     canonicalUrl={'https://winndeal.com/about'}
+     title={"WinnDeal-About"}keywords={'it services company,it firm,it solutions company,it company website,about winndeal,uae,it solutions,pc peripherals,it company dubai'}>
      <Header />
       <ContactIcons/>
       <motion.div

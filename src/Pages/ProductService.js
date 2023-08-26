@@ -103,7 +103,9 @@ function ProductService() {
 
   return (
     <>
-    <Layout title={"Products & Services"} keywords={'muhammed nizamudheen m,nizamudheen,Winndeal UAE,Laptop,desktop,suppliers in Dubai'}>
+    <Layout 
+    canonicalUrl={'https://winndeal.com/product-services'}
+    title={"Products & Services"} keywords={'muhammed nizamudheen m,nizamudheen,winndeal uae,dubai,laptop,desktop,suppliers in dubai,pc peripherals,server,it support,winndeal products,services'}>
     <Header/>
     <div className='mt-5 pt-5'>
     <div className='mt-5'>
