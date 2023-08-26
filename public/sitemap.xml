@@ -1,27 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
    <url>
-      <loc>https://www.winndeal.com/</loc>
+      <loc>https://winndeal.com/</loc>
       <lastmod>2023-08-16T12:00:00+00:00</lastmod>
       <changefreq>weekly</changefreq>
       <priority>1.0</priority>
    </url>
    <url>
-      <loc>https://www.winndeal.com/about</loc>
+      <loc>https://winndeal.com/about</loc>
       <lastmod>2023-08-15T09:30:00+00:00</lastmod>
       <changefreq>monthly</changefreq>
       <priority>1.0</priority>
    </url>
    <url>
-      <loc>https://www.winndeal.com/product-services</loc>
+      <loc>https://winndeal.com/product-services</loc>
       <lastmod>2023-08-14T16:45:00+00:00</lastmod>
       <changefreq>yearly</changefreq>
       <priority>1.0</priority>
    </url>
    <url>
-      <loc>https://www.winndeal.com/contact</loc>
+      <loc>https://winndeal.com/contact</loc>
       <lastmod>2023-08-14T16:45:00+00:00</lastmod>
       <changefreq>yearly</changefreq>
-      <priority>0.6</priority>
+      <priority>0.8</priority>
    </url>
 </urlset>
