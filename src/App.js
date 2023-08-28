@@ -5,12 +5,11 @@ import Home from './Pages/Home';
 import ProductService from './Pages/ProductService';
 import About from './Pages/About';
 import Contact from './Pages/Contact';
-import { useEffect, useState } from 'react';
+import { useEffect } from 'react';
 
 import Layout from './Components/Layout';
 import { Toaster } from 'react-hot-toast';
 import 'react-chatbot-kit/build/main.css'
-import Load from './Components/Load';
 
 function App() {
 
