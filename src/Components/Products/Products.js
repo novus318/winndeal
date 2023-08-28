@@ -99,7 +99,7 @@ function Products() {
               className="row mb-2 pb-3 justify-content-center"
             >
               <motion.img
-              animate={{ opacity: 0.85, scale: 1 }}
+              animate={{ opacity: 0.95, scale: 1 }}
                 src={product.image}
                 alt={product.name}
                 style={{ borderRadius: "10%" }}

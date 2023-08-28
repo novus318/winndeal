@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.ffb25d97.css",
-    "main.js": "/static/js/main.81b23c0b.js",
+    "main.js": "/static/js/main.99603a72.js",
     "static/media/server.png": "/static/media/server.e44cb0c280ac708663ae.png",
     "static/media/Maintenance.png": "/static/media/Maintenance.649d9afed17ac280e215.png",
     "static/media/Surveillance.png": "/static/media/Surveillance.cfcc7a9f1fa89f45fb4a.png",
@@ -17,11 +17,13 @@
     "static/media/os.png": "/static/media/os.de7a51accc65043c6ddb.png",
     "static/media/Consultation.png": "/static/media/Consultation.a5f283d4b547d9bee31d.png",
     "static/media/contract.png": "/static/media/contract.521aaa6d380f65403b91.png",
+    "static/media/printer.png": "/static/media/printer.739b241c8a0ade36a195.png",
     "static/media/a1.png": "/static/media/a1.3cff59d082ff907c8e77.png",
     "static/media/fa-brands-400.ttf": "/static/media/fa-brands-400.150de8eaa454d669c405.ttf",
     "static/media/network.png": "/static/media/network.b283f9442c91327801dd.png",
     "static/media/fa-solid-900.woff2": "/static/media/fa-solid-900.bb975c966c37455a1bc3.woff2",
     "static/media/fa-brands-400.woff2": "/static/media/fa-brands-400.e033a13ee751afc1860c.woff2",
+    "static/media/peripherals.png": "/static/media/peripherals.49a27f949ac7d77dbf93.png",
     "static/media/a2.png": "/static/media/a2.c37ab32e72d0dfefce49.png",
     "static/media/loan.png": "/static/media/loan.f3dafe781ab454ce4fc3.png",
     "static/media/c1.png": "/static/media/c1.2f100fef841ac943338c.png",
@@ -29,8 +31,6 @@
     "static/media/logo.png": "/static/media/logo.5ab40850fd6db112ae75.png",
     "static/media/logo-color.png": "/static/media/logo-color.d4327927976e13d24708.png",
     "static/media/atm-card.png": "/static/media/atm-card.59af382fb7a22bfe56f9.png",
-    "static/media/printer.png": "/static/media/printer.0c0b96996add85425948.png",
-    "static/media/peripherals.png": "/static/media/peripherals.398982484f95a3cd6fd2.png",
     "static/media/transfer.png": "/static/media/transfer.74581f2d8cb71f50cec5.png",
     "static/media/cash-on-delivery.png": "/static/media/cash-on-delivery.e191ac1241b628529a65.png",
     "static/media/fa-regular-400.woff2": "/static/media/fa-regular-400.3223dc79c1adee56370b.woff2",
@@ -52,10 +52,10 @@
     "static/media/slick.ttf": "/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/static/media/slick.295183786cd8a1389865.woff",
     "main.ffb25d97.css.map": "/static/css/main.ffb25d97.css.map",
-    "main.81b23c0b.js.map": "/static/js/main.81b23c0b.js.map"
+    "main.99603a72.js.map": "/static/js/main.99603a72.js.map"
   },
   "entrypoints": [
     "static/css/main.ffb25d97.css",
-    "static/js/main.81b23c0b.js"
+    "static/js/main.99603a72.js"
   ]
 }
