@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react'
 import './Promise.css'
-import Assurance from '../../Images/promise.png'
+import Assurance from '../../Images/promise.avif'
 import { motion, useAnimation } from 'framer-motion'
 function Promise() {
   const controls = useAnimation();
@@ -47,7 +47,7 @@ function Promise() {
       transition={{ duration: 1 }}
       style={{
       transform: 'translate(-10%)'}} className='col-11 col-md-5 mt-2 pt-5 m-auto'>
-        <h4 className='para '>
+        <h4 className='para'>
         With unwavering Assurance,<br/><br/>Our core focus lies in delivering exceptional services encompassing System Integration, IT Infrastructure, Servers, Software, and Security solutions.
         </h4>
     </motion.div>

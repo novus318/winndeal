@@ -1,5 +1,5 @@
 import React from 'react'
-import Logo from '../Images/title.png'
+import Logo from '../Images/title.avif'
 function BotAvatar() {
   return (
     <div className='col-2'>

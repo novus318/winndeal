@@ -1,13 +1,13 @@
 import React, { useEffect } from "react";
 import { motion, useAnimation } from "framer-motion";
 import './Products.css'
-import serverImage from "../../Images/server.png";
-import workstationImage from "../../Images/workStation.png";
-import upsImage from "../../Images/UPS.png";
-import laptopImage from "../../Images/laptops.png";
-import networkImage from "../../Images/network.png";
-import Peripherals from "../../Images/peripherals.png";
-import printerImage from "../../Images/printer.png"
+import serverImage from "../../Images/server.avif";
+import workstationImage from "../../Images/workStation.avif";
+import upsImage from "../../Images/UPS.avif";
+import laptopImage from "../../Images/laptops.avif";
+import networkImage from "../../Images/network.avif";
+import Peripherals from "../../Images/peripherals.avif";
+import printerImage from "../../Images/printer.avif"
 function Products() {
   const controls = useAnimation();
   const handleScroll = () => {
@@ -99,7 +99,7 @@ function Products() {
               className="row mb-2 pb-3 justify-content-center"
             >
               <motion.img
-              animate={{ opacity: 0.95, scale: 1 }}
+              animate={{ opacity: 0.88, scale: 1 }}
                 src={product.image}
                 alt={product.name}
                 style={{ borderRadius: "10%" }}
