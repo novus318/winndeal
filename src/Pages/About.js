@@ -110,7 +110,6 @@ function About() {
             }}
           >
             <h4 className="para">
-              {" "}
               Our strategic partnerships and highest levels of partnership
               accreditations with global brands like HP, Dell, Lenovo, Aruba,
               APC, Microsoft, and many others enable us to provide our customers
