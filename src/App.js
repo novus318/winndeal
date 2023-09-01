@@ -1,29 +1,15 @@
-
 import { Route, BrowserRouter as Router, Routes} from 'react-router-dom';
 import './App.css';
 import Home from './Pages/Home';
 import ProductService from './Pages/ProductService';
 import About from './Pages/About';
 import Contact from './Pages/Contact';
-import { useEffect } from 'react';
-
+import React from 'react'
 import Layout from './Components/Layout';
 import { Toaster } from 'react-hot-toast';
 import 'react-chatbot-kit/build/main.css'
 
 function App() {
-
-useEffect(() => {
-  const disableContextMenu = (event) => {
-    event.preventDefault();
-  };
-
-  window.addEventListener('contextmenu', disableContextMenu);
-
-  return () => {
-    window.removeEventListener('contextmenu', disableContextMenu);
-  };
-}, []);
   return (
   <>
   <Layout>
