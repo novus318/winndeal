@@ -2,7 +2,7 @@
 import React, { useEffect, useState } from "react";
 import Header from "../Components/Header/Header";
 import Layout from "../Components/Layout";
-import banner2 from "../Images/c1.avif";
+import banner2 from "../Images/c1.png";
 import emailjs from "emailjs-com";
 import "./Page.css";
 import { motion,useAnimation } from 'framer-motion';

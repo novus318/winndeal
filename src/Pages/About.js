@@ -1,8 +1,8 @@
 import React, { useEffect } from "react";
 import Header from "../Components/Header/Header";
 import { motion, useAnimation } from "framer-motion";
-import A2 from "../Images/a2.avif";
-import A1 from "../Images/a1.avif";
+import A2 from "../Images/a2.png";
+import A1 from "../Images/a1.png";
 import "./Page.css";
 import Cards from "../Components/Cards/Cards";
 import ContactIcons from "../Components/ContactIcons";

@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
-import logoColor from '../../Images/logo-color.avif';
-import logo from '../../Images/logo.avif';
+import logoColor from '../../Images/logo-color.png';
+import logo from '../../Images/logo.png';
 import "./Header.css"
 import {  Nav,Navbar } from 'react-bootstrap';
 import { Link } from 'react-router-dom';

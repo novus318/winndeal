@@ -3,15 +3,15 @@ import { motion} from 'framer-motion'
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
-import Asus from '../Images/asus.avif';
-import Dell from '../Images/dell .avif';
-import HP from '../Images/hp.avif';
-import Lenovo from '../Images/lenovo.avif';
-import MS from '../Images/ms.avif';
-import Canon from '../Images/canon.avif';
-import Qnap from '../Images/qnap.avif';
-import Samsung from '../Images/samsung.avif';
-import Synology from '../Images/synology.avif';
+import Asus from '../Images/asus.png';
+import Dell from '../Images/dell .png';
+import HP from '../Images/hp.png';
+import Lenovo from '../Images/lenovo.png';
+import MS from '../Images/ms.png';
+import Canon from '../Images/canon.png';
+import Qnap from '../Images/qnap.png';
+import Samsung from '../Images/samsung.png';
+import Synology from '../Images/synology.png';
 
 
 const brandImages = [MS, Lenovo, HP, Dell, Asus, Samsung, Qnap,Synology, Canon];

@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react'
 import './Promise.css'
-import Assurance from '../../Images/promise.avif'
+import Assurance from '../../Images/promise.png'
 import { motion, useAnimation } from 'framer-motion'
 function Promise() {
   const controls = useAnimation();

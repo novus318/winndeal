@@ -12,14 +12,14 @@ import {
 import Products from '../Components/Products/Products';
 import Footer from '../Components/Footer/Footer';
 import Layout from '../Components/Layout';
-import Installation from  '../Images/Installation.avif'
-import Maintenance from  '../Images/Maintenance.avif'
-import Security from  '../Images/Security.avif'
-import Consultation from  '../Images/Consultation.avif'
-import Remote from '../Images/Remote.avif'
-import Contract from '../Images/contract.avif'
-import OS from  '../Images/os.avif'
-import CCTV from  '../Images/Surveillance.avif'
+import Installation from  '../Images/Installation.png'
+import Maintenance from  '../Images/Maintenance.png'
+import Security from  '../Images/Security.png'
+import Consultation from  '../Images/Consultation.png'
+import Remote from '../Images/Remote.png'
+import Contract from '../Images/contract.png'
+import OS from  '../Images/os.png'
+import CCTV from  '../Images/Surveillance.png'
 import { useLocation } from 'react-router-dom';
 function ProductService() {
   const location = useLocation();
