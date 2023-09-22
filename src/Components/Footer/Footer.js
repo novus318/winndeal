@@ -5,11 +5,11 @@ import {
 } from "mdb-react-ui-kit";
 import "./footer.css";
 import React from "react";
-import COD from '../../Images/cash-on-delivery.png'
-import Bank from '../../Images/transfer.png'
-import Card from '../../Images/atm-card.png'
-import Loan from '../../Images/loan.png'
-import Logo from '../../Images/loopcod-w.png'
+import COD from '../../Images/cash-on-delivery.webp'
+import Bank from '../../Images/transfer.webp'
+import Card from '../../Images/atm-card.webp'
+import Loan from '../../Images/loan.webp'
+import Logo from '../../Images/loopcod-w.webp'
 function Footer() {
   const Location = () => {
     window.open("https://goo.gl/maps/Ja7wtrVrpMZC6xHi6");

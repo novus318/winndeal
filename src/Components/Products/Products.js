@@ -1,13 +1,13 @@
 import React, { useEffect } from "react";
 import { motion, useAnimation } from "framer-motion";
 import './Products.css'
-import serverImage from "../../Images/server.png";
-import workstationImage from "../../Images/workStation.png";
-import upsImage from "../../Images/UPS.png";
-import laptopImage from "../../Images/laptops.png";
-import networkImage from "../../Images/network.png";
-import Peripherals from "../../Images/peripherals.png";
-import printerImage from "../../Images/printer.png"
+import serverImage from "../../Images/server.webp";
+import workstationImage from "../../Images/workStation.webp";
+import upsImage from "../../Images/UPS.webp";
+import laptopImage from "../../Images/laptops.webp";
+import networkImage from "../../Images/network.webp";
+import Peripherals from "../../Images/peripherals.webp";
+import printerImage from "../../Images/printer.webp"
 function Products() {
   const controls = useAnimation();
   const handleScroll = () => {

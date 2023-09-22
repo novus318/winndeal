@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react'
 import { motion } from "framer-motion"
 import "./Banner.css"
-import banner2 from "../../Images/baner2.png"
-import banner1 from "../../Images/baner1.png"
+import banner2 from "../../Images/baner2.webp"
+import banner1 from "../../Images/baner1.webp"
 import { TypeAnimation } from 'react-type-animation';
 function Banner() {
   const images = [banner1, banner2];
